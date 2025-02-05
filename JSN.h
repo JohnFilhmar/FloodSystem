@@ -3,6 +3,6 @@
 
 void setupJSN();
 long triggerEcho();
-void readDistanceWithMean();
+float getWaterLevel();
 
 #endif

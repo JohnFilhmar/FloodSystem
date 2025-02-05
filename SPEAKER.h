@@ -2,12 +2,13 @@
 #define SPEAKER_H
 #include <SoftwareSerial.h>
 
-#define DFPLAYER_VOLUME_MAX 20
-#define DFPLAYER_EQ_NORMAL 0
-
 extern SoftwareSerial dfPlayerSerial;
 
 void setupSpeaker();
-void playTone(int tone, int duration);
+void playTone(int tone, long duration);
+void stopTone();
+bool isPlaying();
+void playFile(int fileNumber);
+// void handleTonePlayback();
 
 #endif

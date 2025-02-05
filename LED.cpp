@@ -9,8 +9,9 @@ void setupLED()
   pinMode(BLUE_LED, OUTPUT);
   digitalWrite(RED_LED, LOW);
   digitalWrite(GREEN_LED, LOW);
-  digitalWrite(BLUE_LED, LOW);
-}
+  digitalWrite(BLUE_LED, LOW); 
+}  
+
 
 void setLEDColor(int red, int green, int blue)
 {
