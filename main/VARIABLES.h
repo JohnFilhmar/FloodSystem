@@ -27,14 +27,14 @@ const char NUMBERS_TO_MESSAGE[][11] = {
     "09701703168"
 };
 // COUNT OF NUMBERS TO SEND THE MESSAGE TO
-const int NUMBERS_TO_MESSAGE_COUNT = 1;
+const int NUMBERS_TO_MESSAGE_COUNT = 3;
 
 // GSM Module Constants
 const long GSM_TIMEOUT = 1000; // Timeout for GSM commands
 const long GSM_DELAY = 1000; // Delay for GSM commands
 
 // INTERVALS
-const long SMS_INTERVAL = 60000; // 3 minute interval - sends SMS every 3 minutes or when the water level changes
+const long SMS_INTERVAL = 180000; // 3 minute interval - sends SMS every 3 minutes or when the water level changes
 const long TONE_INTERVAL = 120000; // 2 minutes interval - plays tone every 2 minutes or when the water level changes
 const char MESSAGE_FORMAT[] = "Water level is at %f meters. Please check the water level immediately."; 
 

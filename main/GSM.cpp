@@ -336,7 +336,7 @@ void directSMS(float waterLevel) {
         }
         break;
       case 1:
-        if (currentTime - smsStepMillis >= 1000) {
+        if (currentTime - smsStepMillis >= 3000) {
           sim800.print("AT+CMGS=\"");
           sim800.print(NUMBERS_TO_MESSAGE[i]);
           sim800.println("\"");
@@ -345,7 +345,7 @@ void directSMS(float waterLevel) {
         }
         break;
       case 2:
-        if (currentTime - smsStepMillis >= 3000) {
+        if (currentTime - smsStepMillis >= 1000) {
           sim800.println(createMessage(waterLevel));
           smsStepMillis = currentTime;
           smsStep++;
@@ -366,6 +366,7 @@ void directSMS(float waterLevel) {
         }
         break;
     }
+    delay(2000);
   }
   
 }
